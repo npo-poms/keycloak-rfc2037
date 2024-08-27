@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.security</groupId>
   <artifactId>keycloak-rfc2037</artifactId>
-  <version>4.0</version>
+  <version>4.0-SNAPSHOT</version>
   <description>hashing of passwords according to RFC-2037</description>
 
     <properties>
@@ -16,12 +16,21 @@
     <connection>scm:git:${project.scm.url}.git</connection>
     <developerConnection>scm:git:${project.scm.url}.git</developerConnection>
     <url>https://github.com/npo-poms/keycloak-rfc2037</url>
-    <tag>keycloak-rfc2037-4.0</tag>
   </scm>
 
 
     <build>
       <defaultGoal>install</defaultGoal>
+      <plugins>
+        <plugin>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <branchName>${project.version}</branchName>
+            <tagNameFormat>@{project.version}</tagNameFormat>
+          </configuration>
+        </plugin>
+      </plugins>
     </build>
 
     <dependencies>
@@ -62,6 +71,7 @@
         <scope>provided</scope>
       </dependency>
     </dependencies>
+
 
   <distributionManagement>
     <snapshotRepository>
