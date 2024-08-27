@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+    <groupId>nl.vpro.security</groupId>
+    <artifactId>vpro-keycloak-rfc2037</artifactId>
+    <version>4.0-SNAPSHOT</version>
+
+    <properties>
+      <keycloak.version>25.0.0</keycloak.version>
+    </properties>
+    <build>
+        <defaultGoal>install</defaultGoal>
+    </build>
+
+    <dependencies>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-server-spi</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-common</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-core</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-server-spi-private</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.11.0</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>3.6.0.Final</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+
+</project>
