@@ -40,6 +40,8 @@
     </developer>
     <developer>
       <id>michiel</id>
+      <name>Michiel Meeuwissen</name>
+      <email>michiel.meeuwissen+github@gmail.com</email>
       <roles>
         <role>developer</role>
       </roles>
@@ -48,59 +50,59 @@
   </developers>
 
 
-    <build>
-      <defaultGoal>install</defaultGoal>
-      <plugins>
-        <plugin>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>3.1.1</version>
-          <configuration>
-            <branchName>${project.version}</branchName>
-            <tagNameFormat>@{project.version}</tagNameFormat>
-          </configuration>
-        </plugin>
-      </plugins>
-    </build>
-
-    <dependencies>
-      <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-server-spi</artifactId>
-        <version>${keycloak.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-common</artifactId>
-        <version>${keycloak.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-core</artifactId>
-        <version>${keycloak.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-server-spi-private</artifactId>
-        <version>${keycloak.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>5.11.0</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging</artifactId>
-        <version>3.6.0.Final</version>
-        <scope>provided</scope>
-      </dependency>
-    </dependencies>
-
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <branchName>${project.version}</branchName>
+          <tagNameFormat>@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.keycloak</groupId>
+      <artifactId>keycloak-server-spi</artifactId>
+      <version>${keycloak.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.keycloak</groupId>
+      <artifactId>keycloak-common</artifactId>
+      <version>${keycloak.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.keycloak</groupId>
+      <artifactId>keycloak-core</artifactId>
+      <version>${keycloak.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.keycloak</groupId>
+      <artifactId>keycloak-server-spi-private</artifactId>
+      <version>${keycloak.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.11.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.logging</groupId>
+      <artifactId>jboss-logging</artifactId>
+      <version>3.6.0.Final</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  
 
   <distributionManagement>
     <snapshotRepository>
@@ -112,7 +114,7 @@
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
-   <profiles>
+  <profiles>
     <profile>
       <id>deploy</id>
       <build>
