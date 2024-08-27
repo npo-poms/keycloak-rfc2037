@@ -7,3 +7,5 @@ image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.security/key
 
 This module can be used in keycloak passwords needs to be hashed with RFC-2037, e.g. because they used to be in LDAP.
 
+Used in https://ident.poms.omroep.nl
+
