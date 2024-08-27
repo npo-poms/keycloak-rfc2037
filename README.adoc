@@ -1,0 +1,5 @@
+= keycloak rfc-2037
+
+image:https://github.com/npo-poms/keycloak-rfc2037/actions/workflows/maven.yml/badge.svg?[Build Status,link=https://github.com/npo-poms/keycloak-rfc2037/actions/workflows/maven.yml]
+image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.security/keycloak-rfc2037.svg[snapshots,link=https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/security/]
+
