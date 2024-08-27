@@ -5,3 +5,5 @@ image:https://img.shields.io/maven-central/v/nl.vpro.security/keycloak-rfc2037.s
 image:https://www.javadoc.io/badge/nl.vpro.security/keycloak-rfc2037.svg?color=blue[javadoc,link=https://www.javadoc.io/doc/nl.vpro.security/keycloak-rfc2037]
 image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.security/keycloak-rfc2037.svg[snapshots,link=https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/security/]
 
+This module can be used in keycloak passwords needs to be hashed with RFC-2037, e.g. because they used to be in LDAP.
+
