@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.security</groupId>
   <artifactId>keycloak-rfc2037</artifactId>
-  <version>4.0</version>
+  <version>4.1-SNAPSHOT</version>
   <name>Keycloak RFC-2037</name>
   <description>hashing of passwords according to RFC-2037</description>
   <url>https://github.com/npo-poms/keycloak-rfc2037/</url>
@@ -18,7 +18,7 @@
     <connection>scm:git:${project.scm.url}.git</connection>
     <developerConnection>scm:git:${project.scm.url}.git</developerConnection>
     <url>https://github.com/npo-poms/keycloak-rfc2037</url>
-    <tag>4.0</tag>
+    <tag>HEAD</tag>
   </scm>
   
   
